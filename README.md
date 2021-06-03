@@ -1,6 +1,15 @@
 # XJar [![](https://jitpack.io/v/core-lib/xjar.svg)](https://jitpack.io/#core-lib/xjar)
+
+## 修改内容
+
+相对于原版做了如下的修改
+
+- 增加了Main的入口，简化了参数，可以用命令行模式启动，附带了镜像，更容易集成到devops
+- 增加了默认exclude所有`BOOT-INF\lib`中jar的参数，减少生成jar的大小，可以通过-n参数添加单独需要加密的jar
+
 GitHub: https://github.com/core-lib/xjar
 ### Spring Boot JAR 安全加密运行工具, 同时支持的原生JAR.
+
 ### 基于对JAR包内资源的加密以及拓展ClassLoader来构建的一套程序加密启动, 动态解密运行的方案, 避免源码泄露以及反编译.
 
 ## 功能特性
