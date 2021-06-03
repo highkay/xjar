@@ -5,6 +5,10 @@
 相对于原版做了如下的修改
 
 - 增加了Main的入口，简化了参数，可以用命令行模式启动，附带了镜像，更容易集成到devops
+  - -i 输入jar路径
+  - -o 输出jar路径
+  - -p 加密密钥
+  - -n 单独include的jar内路径
 - 增加了默认exclude所有`BOOT-INF\lib`中jar的参数，减少生成jar的大小，可以通过-n参数添加单独需要加密的jar
 
 GitHub: https://github.com/core-lib/xjar
